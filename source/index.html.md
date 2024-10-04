@@ -1,245 +1,180 @@
 ---
-title: API Reference
-
-language_tabs: # must be one of https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers
-  - shell
-  - ruby
-  - python
-  - javascript
-
+title: Centrifuge SDK Documentation
+language_tabs:
+  - typescript
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
-
+  - <a href='#'>Sign Up for API Keys</a>
 includes:
   - errors
-
 search: true
-
-code_clipboard: true
-
-meta:
-  - name: description
-    content: Documentation for the Kittn API
 ---
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
-
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+Welcome to the Centrifuge SDK documentation. This SDK provides a comprehensive interface to interact with Centrifuge pools, assets, and investor-related functionality.
 
 # Authentication
 
-> To authorize, use this code:
+> To initialize the SDK:
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+```typescript
+const centrifuge: CentrifugeSDK = {
+  // SDK initialization
+};
 ```
 
-```python
-import kittn
+# SDK Overview
 
-api = kittn.authorize('meowmeowmeow')
+The Centrifuge SDK provides three main interfaces:
+- Pools Management
+- Asset Operations
+- Investor Functions
+
+# Pools
+
+## Get All Pools
+
+```typescript
+const pools = centrifuge.getAllPools(true);
 ```
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here" \
-  -H "Authorization: meowmeowmeow"
+Returns an array of all active pools when `activeOnly` is set to true.
+
+### Parameters
+
+Parameter | Type | Description
+--------- | ---- | -----------
+activeOnly | boolean | Filter for active pools only
+
+### Response
+
+Returns an array of `PoolOverview` objects containing:
+- poolName
+- assetClass
+- TVL
+- APR
+- status
+
+## Get Single Pool
+
+```typescript
+const pool = centrifuge.pools("pool-id");
 ```
 
-```javascript
-const kittn = require('kittn');
+Returns detailed information about a specific pool.
 
-let api = kittn.authorize('meowmeowmeow');
+### Parameters
+
+Parameter | Type | Description
+--------- | ---- | -----------
+poolId | string | Unique identifier of the pool
+
+### Pool Methods
+
+Method | Return Type | Description
+------ | ----------- | -----------
+nav() | number | Current NAV of the pool
+tokenInfo() | TokenInfo | Current token price and APY
+navHistory(days) | HistoricalData[] | Historical NAV data
+tokenPriceHistory(days) | HistoricalData[] | Historical token price data
+keyMetrics() | KeyMetrics | Key performance metrics
+getPoolStructure() | PoolStructure | Pool structure details
+getFees() | PoolFees | Pool fee information
+issuer() | IssuerInfo | Pool issuer information
+reports(days) | Reports | Pool reports including cashflow
+transactions(type?, days?) | Transactions | Pool transactions
+assetSummary() | AssetSummary | Summary of pool assets
+assets(status?, type?, maturityDate?) | Asset[] | List of pool assets
+asset(assetId) | Asset | Single asset details
+
+## Pool Operations
+
+### Invest
+
+```typescript
+const result = pool.invest(1000, "controller", "ethereum", web3Provider);
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+Invest in a pool with the specified amount.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+### Parameters
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+Parameter | Type | Description
+--------- | ---- | -----------
+amount | number | Investment amount
+controller | string | Controller address
+network | string | Network identifier
+web3Provider | any | Web3 provider instance
 
-`Authorization: meowmeowmeow`
+### Claim Deposit
 
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-# Kittens
-
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
+```typescript
+const claim = pool.claimDeposit(1000, "controller", "ethereum", web3Provider);
 ```
 
-```python
-import kittn
+Claim deposited funds from a pool.
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
+### Redeem
+
+```typescript
+const redemption = pool.redeem(1000, "controller", "ethereum", web3Provider);
 ```
 
-```shell
-curl "http://example.com/api/kittens" \
-  -H "Authorization: meowmeowmeow"
+Redeem tokens from a pool.
+
+# Assets
+
+## Get Asset Details
+
+```typescript
+const asset = pool.asset("asset-id");
 ```
 
-```javascript
-const kittn = require('kittn');
+Get detailed information about a specific asset.
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
+### Asset Methods
+
+Method | Return Type | Description
+------ | ----------- | -----------
+metrics() | AssetMetrics | Asset metrics including maturity date
+pricing() | AssetPricing | Asset pricing information
+holdings() | AssetHoldings | Asset holdings details
+history(filters?) | TransactionHistory[] | Asset transaction history
+
+# Investor
+
+## Check Whitelist Status
+
+```typescript
+const isWhitelisted = centrifuge.investor("address").isWhitelisted("wallet-address");
 ```
 
-> The above command returns JSON structured like this:
+Check if a wallet address is whitelisted.
 
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
+## Get Investor Position
+
+```typescript
+const position = centrifuge.investor("address").position("pool-id");
 ```
 
-This endpoint retrieves all kittens.
+Get investor position in a specific pool.
 
-### HTTP Request
+## Get Transaction History
 
-`GET http://example.com/api/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-## Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
+```typescript
+const history = centrifuge.investor("address").transactionHistory(30);
 ```
 
-```python
-import kittn
+Get investor transaction history for the specified number of days.
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
+# Error Handling
 
-```shell
-curl "http://example.com/api/kittens/2" \
-  -H "Authorization: meowmeowmeow"
-```
+The SDK uses standard error handling. All methods may throw exceptions that should be handled appropriately in your application.
 
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+```typescript
+try {
+  const pool = centrifuge.pools("pool-id");
+} catch (error) {
+  console.error("Error fetching pool:", error);
 }
 ```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
-
-## Delete a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2" \
-  -X DELETE \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
-
-This endpoint deletes a specific kitten.
-
-### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
-
