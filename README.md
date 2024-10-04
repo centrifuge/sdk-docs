@@ -1,82 +1,130 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/slatedocs/img/main/logo-slate.png" alt="Slate: API Documentation Generator" width="226">
-  <br>
-  <a href="https://github.com/slatedocs/slate/actions?query=workflow%3ABuild+branch%3Amain"><img src="https://github.com/slatedocs/slate/workflows/Build/badge.svg?branch=main" alt="Build Status"></a>
-  <a href="https://hub.docker.com/r/slatedocs/slate"><img src="https://img.shields.io/docker/v/slatedocs/slate?sort=semver" alt="Docker Version" /></a>
-</p>
+---
+title: Centrifuge SDK Documentation
+---
 
-<p align="center">Slate helps you create beautiful, intelligent, responsive API documentation.</p>
+<p align="center">This is the official documentation for the Centrifuge SDK, helping developers integrate with the Centrifuge protocol quickly and easily.</p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/slatedocs/img/main/screenshot-slate.png" width=700 alt="Screenshot of Example Documentation created with Slate"></p>
 
 <p align="center"><em>The example above was created with Slate. Check it out at <a href="https://slatedocs.github.io/slate">slatedocs.github.io/slate</a>.</em></p>
 
-Features
-------------
+# Centrifuge SDK Documentation
 
-* **Clean, intuitive design** — With Slate, the description of your API is on the left side of your documentation, and all the code examples are on the right side. Inspired by [Stripe's](https://stripe.com/docs/api) and [PayPal's](https://developer.paypal.com/webapps/developer/docs/api/) API docs. Slate is responsive, so it looks great on tablets, phones, and even in print.
+The **Centrifuge SDK Documentation** provides detailed information on how to interact with the Centrifuge protocol, including methods for managing pools, assets, and investor interactions. It is generated using **Slate**, an API documentation generator that makes creating intelligent and responsive documentation easy.
 
-* **Everything on a single page** — Gone are the days when your users had to search through a million pages to find what they wanted. Slate puts the entire documentation on a single page. We haven't sacrificed linkability, though. As you scroll, your browser's hash will update to the nearest header, so linking to a particular point in the documentation is still natural and easy.
+## Features
 
-* **Slate is just Markdown** — When you write docs with Slate, you're just writing Markdown, which makes it simple to edit and understand. Everything is written in Markdown — even the code samples are just Markdown code blocks.
+* **Clean, intuitive design** — The Centrifuge SDK documentation follows a clean design where the description of the API is on the left, and the relevant code examples are on the right.
+* **Everything on a single page** — The entire documentation is presented on a single page, making it easy for users to navigate without getting lost among multiple pages.
+* **Markdown-Based** — The documentation is written in **Markdown**, which makes it easy to maintain, edit, and expand.
+* **Code Samples in Multiple Languages** — The SDK supports multiple programming languages, and this documentation includes tabs for different code examples.
+* **Out-of-the-box syntax highlighting** — Over 100 programming languages are supported for syntax highlighting, making it easy for developers to follow along.
+* **Automatic table of contents** — The documentation includes an auto-generated table of contents on the left, which updates smoothly as users scroll through the page.
 
-* **Write code samples in multiple languages** — If your API has bindings in multiple programming languages, you can easily put in tabs to switch between them. In your document, you'll distinguish different languages by specifying the language name at the top of each code block, just like with GitHub Flavored Markdown.
+# Running the Documentation
 
-* **Out-of-the-box syntax highlighting** for [over 100 languages](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers), no configuration required.
+This documentation is generated using **Slate**, and you have three different ways to run it.
 
-* **Automatic, smoothly scrolling table of contents** on the far left of the page. As you scroll, it displays your current position in the document. It's fast, too. We're using Slate at TripIt to build documentation for our new API, where our table of contents has over 180 entries. We've made sure that the performance remains excellent, even for larger documents.
+## 1. Running Slate Natively
 
-* **Let your users update your documentation for you** — By default, your Slate-generated documentation is hosted in a public GitHub repository. Not only does this mean you get free hosting for your docs with GitHub Pages, but it also makes it simple for other developers to make pull requests to your docs if they find typos or other problems. Of course, if you don't want to use GitHub, you're also welcome to host your docs elsewhere.
+You can run **Slate** natively on your local machine if you have Ruby installed. Follow these steps:
 
-* **RTL Support** Full right-to-left layout for RTL languages such as Arabic, Persian (Farsi), Hebrew etc.
+1. Clone the repository:
 
-Getting started with Slate is super easy! Simply press the green "use this template" button above and follow the instructions below. Or, if you'd like to check out what Slate is capable of, take a look at the [sample docs](https://slatedocs.github.io/slate/).
+    ```bash
+    git clone https://github.com/centrifuge/sdk-docs.git
+    cd sdk-docs
+    ```
 
-Getting Started with Slate
-------------------------------
+2. Install the dependencies:
 
-To get started with Slate, please check out the [Getting Started](https://github.com/slatedocs/slate/wiki#getting-started)
-section in our [wiki](https://github.com/slatedocs/slate/wiki).
+    ```bash
+    bundle install
+    ```
 
-We support running Slate in three different ways:
-* [Natively](https://github.com/slatedocs/slate/wiki/Using-Slate-Natively)
-* [Using Vagrant](https://github.com/slatedocs/slate/wiki/Using-Slate-in-Vagrant)
-* [Using Docker](https://github.com/slatedocs/slate/wiki/Using-Slate-in-Docker)
+3. Run the documentation:
 
-Companies Using Slate
----------------------------------
+    ```bash
+    bundle exec middleman server
+    ```
 
-* [NASA](https://api.nasa.gov)
-* [Sony](http://developers.cimediacloud.com)
-* [Best Buy](https://bestbuyapis.github.io/api-documentation/)
-* [Travis-CI](https://docs.travis-ci.com/api/)
-* [Greenhouse](https://developers.greenhouse.io/harvest.html)
-* [WooCommerce](http://woocommerce.github.io/woocommerce-rest-api-docs/)
-* [Dwolla](https://docs.dwolla.com/)
-* [Clearbit](https://clearbit.com/docs)
-* [Coinbase](https://developers.coinbase.com/api)
-* [Parrot Drones](http://developer.parrot.com/docs/bebop/)
-* [CoinAPI](https://docs.coinapi.io/)
+4. Visit `http://localhost:4567` to see your documentation live.
 
-You can view more in [the list on the wiki](https://github.com/slatedocs/slate/wiki/Slate-in-the-Wild).
+For more details, check out the [Using Slate Natively](https://github.com/slatedocs/slate/wiki/Using-Slate-Natively) section on the Slate wiki.
 
-Questions? Need Help? Found a bug?
---------------------
+## 2. Using Vagrant
 
-If you've got questions about setup, deploying, special feature implementation in your fork, or just want to chat with the developer, please feel free to [start a thread in our Discussions tab](https://github.com/slatedocs/slate/discussions)!
+If you prefer to run **Slate** in a virtualized environment using Vagrant, follow these steps:
 
-Found a bug with upstream Slate? Go ahead and [submit an issue](https://github.com/slatedocs/slate/issues). And, of course, feel free to submit pull requests with bug fixes or changes to the `dev` branch.
+1. Install Vagrant and VirtualBox.
+2. Clone the repository:
 
-Contributors
---------------------
+    ```bash
+    git clone https://github.com/yourusername/centrifuge-sdk-docs.git
+    cd centrifuge-sdk-docs
+    ```
 
-Slate was built by [Robert Lord](https://lord.io) while at [TripIt](https://www.tripit.com/). The project is now maintained by [Matthew Peveler](https://github.com/MasterOdin) and [Mike Ralphson](https://github.com/MikeRalphson).
+3. Run Vagrant:
 
-Thanks to the following people who have submitted major pull requests:
+    ```bash
+    vagrant up
+    vagrant ssh
+    ```
 
-- [@chrissrogers](https://github.com/chrissrogers)
-- [@bootstraponline](https://github.com/bootstraponline)
-- [@realityking](https://github.com/realityking)
-- [@cvkef](https://github.com/cvkef)
+4. Run the server:
 
-Also, thanks to [Sauce Labs](http://saucelabs.com) for sponsoring the development of the responsive styles.
+    ```bash
+    bundle exec middleman server
+    ```
+
+Refer to the [Using Slate in Vagrant](https://github.com/slatedocs/slate/wiki/Using-Slate-in-Vagrant) for detailed instructions.
+
+## 3. Using Docker
+
+**Slate** also supports running with Docker, which makes setting up the environment extremely simple:
+
+1. Install Docker.
+2. Run the following command to start the documentation server:
+
+    ```bash
+    docker run --rm -p 4567:4567 -v $(pwd):/srv/slate slatedocs/slate serve
+    ```
+
+3. Visit `http://localhost:4567` to see your documentation live.
+
+For more details, check out the [Using Slate in Docker](https://github.com/slatedocs/slate/wiki/Using-Slate-in-Docker).
+
+# Centrifuge SDK Overview
+
+The Centrifuge SDK allows developers to manage various components of the Centrifuge protocol. Here’s what you can do:
+
+- **Pools**: Interact with and manage liquidity pools.
+- **Assets**: View and manage the assets contained in pools.
+- **Investors**: Manage investor interactions, including investing, redeeming, and checking positions.
+
+# Contributing to the Documentation
+
+We welcome contributions to improve the Centrifuge SDK documentation. To contribute:
+
+1. Fork the repository on GitHub.
+2. Make your changes and commit them to your fork.
+3. Submit a pull request to the main repository for review.
+
+# Contributors
+
+This documentation was built using **Slate**. Slate was originally created by [Robert Lord](https://lord.io) at [TripIt](https://www.tripit.com/) and is now maintained by [Matthew Peveler](https://github.com/MasterOdin) and [Mike Ralphson](https://github.com/MikeRalphson).
+
+Special thanks to all the contributors who help maintain and improve Slate.
+
+# Questions? Need Help?
+
+If you have any questions or need help with this documentation, please feel free to:
+
+- **[Start a thread in our Discussions tab](https://github.com/yourusername/centrifuge-sdk-docs/discussions)**
+- **[Submit an issue](https://github.com/yourusername/centrifuge-sdk-docs/issues)** if you encounter any bugs.
+
+For more details about **Slate** and its features, visit the official [Slate GitHub repository](https://github.com/slatedocs/slate).
+
+# License
+
+This documentation is open-source and available under the [MIT License](https://github.com/yourusername/centrifuge-sdk-docs/blob/main/LICENSE).
