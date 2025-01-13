@@ -8,6 +8,52 @@ includes:
   - pools
   - reports
   - bigint-wrappers
+  - reference
+  - classes/Centrifuge
+  - classes/Currency
+  - classes/Pool
+  - classes/PoolNetwork
+  - classes/Price
+  - classes/Reports
+  - classes/Vault
+  - type-aliases/AssetListReport
+  - type-aliases/AssetListReportBase
+  - type-aliases/AssetListReportFilter
+  - type-aliases/AssetListReportPrivateCredit
+  - type-aliases/AssetListReportPublicCredit
+  - type-aliases/AssetTransactionReport
+  - type-aliases/AssetTransactionReportFilter
+  - type-aliases/BalanceSheetReport
+  - type-aliases/CashflowReport
+  - type-aliases/CashflowReportPrivateCredit
+  - type-aliases/CashflowReportPublicCredit
+  - type-aliases/Client
+  - type-aliases/Config
+  - type-aliases/CurrencyMetadata
+  - type-aliases/EIP1193ProviderLike
+  - type-aliases/FeeTransactionReport
+  - type-aliases/FeeTransactionReportFilter
+  - type-aliases/HexString
+  - type-aliases/InvestorListReport
+  - type-aliases/InvestorListReportFilter
+  - type-aliases/InvestorTransactionsReport
+  - type-aliases/InvestorTransactionsReportFilter
+  - type-aliases/OperationConfirmedStatus
+  - type-aliases/OperationPendingStatus
+  - type-aliases/OperationSignedMessageStatus
+  - type-aliases/OperationSigningMessageStatus
+  - type-aliases/OperationSigningStatus
+  - type-aliases/OperationStatus
+  - type-aliases/OperationStatusType
+  - type-aliases/OperationSwitchChainStatus
+  - type-aliases/ProfitAndLossReport
+  - type-aliases/ProfitAndLossReportPrivateCredit
+  - type-aliases/ProfitAndLossReportPublicCredit
+  - type-aliases/Query
+  - type-aliases/Signer
+  - type-aliases/TokenPriceReport
+  - type-aliases/TokenPriceReportFilter
+  - type-aliases/Transaction
 search: true
 ---
 
