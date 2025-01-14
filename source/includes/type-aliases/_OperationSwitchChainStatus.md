@@ -3,7 +3,7 @@
 
 > **OperationSwitchChainStatus**: `object`
 
-Defined in: [src/types/transaction.ts:37](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/types/transaction.ts#L37)
+Defined in: [src/types/transaction.ts:37](https://github.com/centrifuge/sdk/blob/f4a05552552306b18fda80681998b920366263a7/src/types/transaction.ts#L37)
 
 ### Type declaration
 

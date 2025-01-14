@@ -3,4 +3,4 @@
 
 > **AssetListReport**: [`AssetListReportBase`](#type-assetlistreportbase) & [`AssetListReportPublicCredit`](#type-assetlistreportpubliccredit) \| [`AssetListReportPrivateCredit`](#type-assetlistreportprivatecredit)
 
-Defined in: [src/types/reports.ts:265](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/types/reports.ts#L265)
+Defined in: [src/types/reports.ts:265](https://github.com/centrifuge/sdk/blob/f4a05552552306b18fda80681998b920366263a7/src/types/reports.ts#L265)
