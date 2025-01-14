@@ -1,7 +1,7 @@
 
 ## Class: Reports
 
-Defined in: [src/Reports/index.ts:34](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L34)
+Defined in: [src/Reports/index.ts:34](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L34)
 
 ### Extends
 
@@ -13,7 +13,7 @@ Defined in: [src/Reports/index.ts:34](https://github.com/centrifuge/sdk/blob/1e4
 
 > **pool**: [`Pool`](#class-pool)
 
-Defined in: [src/Reports/index.ts:39](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L39)
+Defined in: [src/Reports/index.ts:39](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L39)
 
 ### Methods
 
@@ -21,7 +21,7 @@ Defined in: [src/Reports/index.ts:39](https://github.com/centrifuge/sdk/blob/1e4
 
 > **assetList**(`filter`?): [`Query`](#type-query)\<[`AssetListReport`](#type-assetlistreport)[]\>
 
-Defined in: [src/Reports/index.ts:73](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L73)
+Defined in: [src/Reports/index.ts:73](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L73)
 
 ##### Parameters
 
@@ -39,7 +39,7 @@ Defined in: [src/Reports/index.ts:73](https://github.com/centrifuge/sdk/blob/1e4
 
 > **assetTransactions**(`filter`?): [`Query`](#type-query)\<[`AssetTransactionReport`](#type-assettransactionreport)[]\>
 
-Defined in: [src/Reports/index.ts:61](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L61)
+Defined in: [src/Reports/index.ts:61](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L61)
 
 ##### Parameters
 
@@ -57,13 +57,13 @@ Defined in: [src/Reports/index.ts:61](https://github.com/centrifuge/sdk/blob/1e4
 
 > **balanceSheet**(`filter`?): [`Query`](#type-query)\<[`BalanceSheetReport`](#type-balancesheetreport)[]\>
 
-Defined in: [src/Reports/index.ts:45](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L45)
+Defined in: [src/Reports/index.ts:45](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L45)
 
 ##### Parameters
 
 ###### filter?
 
-`ReportFilter`
+[`ReportFilter`](#type-reportfilter)
 
 ##### Returns
 
@@ -75,13 +75,13 @@ Defined in: [src/Reports/index.ts:45](https://github.com/centrifuge/sdk/blob/1e4
 
 > **cashflow**(`filter`?): [`Query`](#type-query)\<[`CashflowReport`](#type-cashflowreport)[]\>
 
-Defined in: [src/Reports/index.ts:49](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L49)
+Defined in: [src/Reports/index.ts:49](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L49)
 
 ##### Parameters
 
 ###### filter?
 
-`ReportFilter`
+[`ReportFilter`](#type-reportfilter)
 
 ##### Returns
 
@@ -93,7 +93,7 @@ Defined in: [src/Reports/index.ts:49](https://github.com/centrifuge/sdk/blob/1e4
 
 > **feeTransactions**(`filter`?): [`Query`](#type-query)\<[`FeeTransactionReport`](#type-feetransactionreport)[]\>
 
-Defined in: [src/Reports/index.ts:69](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L69)
+Defined in: [src/Reports/index.ts:69](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L69)
 
 ##### Parameters
 
@@ -111,7 +111,7 @@ Defined in: [src/Reports/index.ts:69](https://github.com/centrifuge/sdk/blob/1e4
 
 > **investorList**(`filter`?): [`Query`](#type-query)\<[`InvestorListReport`](#type-investorlistreport)[]\>
 
-Defined in: [src/Reports/index.ts:77](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L77)
+Defined in: [src/Reports/index.ts:77](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L77)
 
 ##### Parameters
 
@@ -129,7 +129,7 @@ Defined in: [src/Reports/index.ts:77](https://github.com/centrifuge/sdk/blob/1e4
 
 > **investorTransactions**(`filter`?): [`Query`](#type-query)\<[`InvestorTransactionsReport`](#type-investortransactionsreport)[]\>
 
-Defined in: [src/Reports/index.ts:57](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L57)
+Defined in: [src/Reports/index.ts:57](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L57)
 
 ##### Parameters
 
@@ -147,13 +147,13 @@ Defined in: [src/Reports/index.ts:57](https://github.com/centrifuge/sdk/blob/1e4
 
 > **profitAndLoss**(`filter`?): [`Query`](#type-query)\<[`ProfitAndLossReport`](#type-profitandlossreport)[]\>
 
-Defined in: [src/Reports/index.ts:53](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L53)
+Defined in: [src/Reports/index.ts:53](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L53)
 
 ##### Parameters
 
 ###### filter?
 
-`ReportFilter`
+[`ReportFilter`](#type-reportfilter)
 
 ##### Returns
 
@@ -165,7 +165,7 @@ Defined in: [src/Reports/index.ts:53](https://github.com/centrifuge/sdk/blob/1e4
 
 > **tokenPrice**(`filter`?): [`Query`](#type-query)\<[`TokenPriceReport`](#type-tokenpricereport)[]\>
 
-Defined in: [src/Reports/index.ts:65](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Reports/index.ts#L65)
+Defined in: [src/Reports/index.ts:65](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/Reports/index.ts#L65)
 
 ##### Parameters
 

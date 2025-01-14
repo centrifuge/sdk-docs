@@ -3,7 +3,7 @@
 
 > **CurrencyMetadata**: `object`
 
-Defined in: [src/config/lp.ts:43](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/config/lp.ts#L43)
+Defined in: [src/config/lp.ts:43](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/config/lp.ts#L43)
 
 ### Type declaration
 

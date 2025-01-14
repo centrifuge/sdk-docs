@@ -3,7 +3,7 @@
 
 > **InvestorTransactionsReport**: `object`
 
-Defined in: [src/types/reports.ts:137](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/types/reports.ts#L137)
+Defined in: [src/types/reports.ts:137](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/types/reports.ts#L137)
 
 ### Type declaration
 

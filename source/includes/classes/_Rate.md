@@ -1,7 +1,9 @@
 
-## Class: Price
+## Class: ~~Rate~~
 
-Defined in: [src/utils/BigInt.ts:215](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L215)
+Defined in: [src/utils/BigInt.ts:177](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L177)
+
+### Deprecated
 
 ### Extends
 
@@ -9,11 +11,11 @@ Defined in: [src/utils/BigInt.ts:215](https://github.com/centrifuge/sdk/blob/862
 
 ### Constructors
 
-#### new Price()
+#### new Rate()
 
-> **new Price**(`value`): [`Price`](#class-price)
+> **new Rate**(`value`, `decimals`): [`Rate`](#class-rate)
 
-Defined in: [src/utils/BigInt.ts:218](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L218)
+Defined in: [src/utils/BigInt.ts:29](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L29)
 
 ##### Parameters
 
@@ -21,17 +23,21 @@ Defined in: [src/utils/BigInt.ts:218](https://github.com/centrifuge/sdk/blob/862
 
 `bigint` | `Numeric`
 
+###### decimals
+
+`number` = `27`
+
 ##### Returns
 
-[`Price`](#class-price)
+[`Rate`](#class-rate)
 
-##### Overrides
+##### Inherited from
 
 `DecimalWrapper.constructor`
 
 ### Properties
 
-#### decimals
+#### ~~decimals~~
 
 > `readonly` **decimals**: `number` = `27`
 
@@ -43,7 +49,7 @@ Defined in: [src/utils/BigInt.ts:27](https://github.com/centrifuge/sdk/blob/862f
 
 ***
 
-#### value
+#### ~~value~~
 
 > `protected` **value**: `bigint`
 
@@ -55,51 +61,15 @@ Defined in: [src/utils/BigInt.ts:3](https://github.com/centrifuge/sdk/blob/862f7
 
 ***
 
-#### decimals
+#### ~~decimals~~
 
-> `static` **decimals**: `number` = `18`
+> `static` **decimals**: `number` = `27`
 
-Defined in: [src/utils/BigInt.ts:216](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L216)
+Defined in: [src/utils/BigInt.ts:178](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L178)
 
 ### Methods
 
-#### add()
-
-> **add**(`value`): [`Price`](#class-price)
-
-Defined in: [src/utils/BigInt.ts:226](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L226)
-
-##### Parameters
-
-###### value
-
-`bigint` | [`Price`](#class-price)
-
-##### Returns
-
-[`Price`](#class-price)
-
-***
-
-#### div()
-
-> **div**(`value`): [`Price`](#class-price)
-
-Defined in: [src/utils/BigInt.ts:238](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L238)
-
-##### Parameters
-
-###### value
-
-`bigint` | [`Price`](#class-price)
-
-##### Returns
-
-[`Price`](#class-price)
-
-***
-
-#### eq()
+#### ~~eq()~~
 
 > **eq**\<`T`\>(`value`): `boolean`
 
@@ -125,7 +95,7 @@ Defined in: [src/utils/BigInt.ts:115](https://github.com/centrifuge/sdk/blob/862
 
 ***
 
-#### gt()
+#### ~~gt()~~
 
 > **gt**\<`T`\>(`value`): `boolean`
 
@@ -151,7 +121,7 @@ Defined in: [src/utils/BigInt.ts:105](https://github.com/centrifuge/sdk/blob/862
 
 ***
 
-#### gte()
+#### ~~gte()~~
 
 > **gte**\<`T`\>(`value`): `boolean`
 
@@ -177,7 +147,7 @@ Defined in: [src/utils/BigInt.ts:110](https://github.com/centrifuge/sdk/blob/862
 
 ***
 
-#### isZero()
+#### ~~isZero()~~
 
 > **isZero**(): `boolean`
 
@@ -193,7 +163,7 @@ Defined in: [src/utils/BigInt.ts:119](https://github.com/centrifuge/sdk/blob/862
 
 ***
 
-#### lt()
+#### ~~lt()~~
 
 > **lt**\<`T`\>(`value`): `boolean`
 
@@ -219,7 +189,7 @@ Defined in: [src/utils/BigInt.ts:95](https://github.com/centrifuge/sdk/blob/862f
 
 ***
 
-#### lte()
+#### ~~lte()~~
 
 > **lte**\<`T`\>(`value`): `boolean`
 
@@ -245,43 +215,31 @@ Defined in: [src/utils/BigInt.ts:100](https://github.com/centrifuge/sdk/blob/862
 
 ***
 
-#### mul()
+#### ~~toApr()~~
 
-> **mul**(`value`): [`Price`](#class-price)
+> **toApr**(): `Decimal`
 
-Defined in: [src/utils/BigInt.ts:234](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L234)
-
-##### Parameters
-
-###### value
-
-`bigint` | [`Price`](#class-price)
+Defined in: [src/utils/BigInt.ts:202](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L202)
 
 ##### Returns
 
-[`Price`](#class-price)
+`Decimal`
 
 ***
 
-#### sub()
+#### ~~toAprPercent()~~
 
-> **sub**(`value`): [`Price`](#class-price)
+> **toAprPercent**(): `Decimal`
 
-Defined in: [src/utils/BigInt.ts:230](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L230)
-
-##### Parameters
-
-###### value
-
-`bigint` | [`Price`](#class-price)
+Defined in: [src/utils/BigInt.ts:210](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L210)
 
 ##### Returns
 
-[`Price`](#class-price)
+`Decimal`
 
 ***
 
-#### toBigInt()
+#### ~~toBigInt()~~
 
 > **toBigInt**(): `bigint`
 
@@ -297,7 +255,7 @@ Defined in: [src/utils/BigInt.ts:21](https://github.com/centrifuge/sdk/blob/862f
 
 ***
 
-#### toDecimal()
+#### ~~toDecimal()~~
 
 > **toDecimal**(): `Decimal`
 
@@ -313,7 +271,7 @@ Defined in: [src/utils/BigInt.ts:43](https://github.com/centrifuge/sdk/blob/862f
 
 ***
 
-#### toFloat()
+#### ~~toFloat()~~
 
 > **toFloat**(): `number`
 
@@ -329,7 +287,19 @@ Defined in: [src/utils/BigInt.ts:47](https://github.com/centrifuge/sdk/blob/862f
 
 ***
 
-#### toString()
+#### ~~toPercent()~~
+
+> **toPercent**(): `Decimal`
+
+Defined in: [src/utils/BigInt.ts:198](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L198)
+
+##### Returns
+
+`Decimal`
+
+***
+
+#### ~~toString()~~
 
 > **toString**(): `string`
 
@@ -345,11 +315,47 @@ Defined in: [src/utils/BigInt.ts:17](https://github.com/centrifuge/sdk/blob/862f
 
 ***
 
-#### fromFloat()
+#### ~~fromApr()~~
 
-> `static` **fromFloat**(`number`): [`Price`](#class-price)
+> `static` **fromApr**(`apr`): [`Rate`](#class-rate)
 
-Defined in: [src/utils/BigInt.ts:222](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L222)
+Defined in: [src/utils/BigInt.ts:188](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L188)
+
+##### Parameters
+
+###### apr
+
+`Numeric`
+
+##### Returns
+
+[`Rate`](#class-rate)
+
+***
+
+#### ~~fromAprPercent()~~
+
+> `static` **fromAprPercent**(`apr`): [`Rate`](#class-rate)
+
+Defined in: [src/utils/BigInt.ts:194](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L194)
+
+##### Parameters
+
+###### apr
+
+`Numeric`
+
+##### Returns
+
+[`Rate`](#class-rate)
+
+***
+
+#### ~~fromFloat()~~
+
+> `static` **fromFloat**(`number`): [`Rate`](#class-rate)
+
+Defined in: [src/utils/BigInt.ts:180](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L180)
 
 ##### Parameters
 
@@ -359,4 +365,22 @@ Defined in: [src/utils/BigInt.ts:222](https://github.com/centrifuge/sdk/blob/862
 
 ##### Returns
 
-[`Price`](#class-price)
+[`Rate`](#class-rate)
+
+***
+
+#### ~~fromPercent()~~
+
+> `static` **fromPercent**(`number`): [`Rate`](#class-rate)
+
+Defined in: [src/utils/BigInt.ts:184](https://github.com/centrifuge/sdk/blob/862f7f1e7a8d6021f967d75a29f9dd861d4ba104/src/utils/BigInt.ts#L184)
+
+##### Parameters
+
+###### number
+
+`Numeric`
+
+##### Returns
+
+[`Rate`](#class-rate)
