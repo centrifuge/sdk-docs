@@ -3,4 +3,4 @@
 
 > **Transaction**: [`Query`](#type-query)\<[`OperationStatus`](#type-operationstatus)\>
 
-Defined in: [src/types/transaction.ts:64](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/types/transaction.ts#L64)
+Defined in: [src/types/transaction.ts:64](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/types/transaction.ts#L64)

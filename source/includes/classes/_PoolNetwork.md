@@ -1,7 +1,7 @@
 
 ## Class: PoolNetwork
 
-Defined in: [src/PoolNetwork.ts:16](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L16)
+Defined in: [src/PoolNetwork.ts:16](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L16)
 
 Query and interact with a pool on a specific network.
 
@@ -15,7 +15,7 @@ Query and interact with a pool on a specific network.
 
 > **chainId**: `number`
 
-Defined in: [src/PoolNetwork.ts:21](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L21)
+Defined in: [src/PoolNetwork.ts:21](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L21)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [src/PoolNetwork.ts:21](https://github.com/centrifuge/sdk/blob/1e4b2
 
 > **pool**: [`Pool`](#class-pool)
 
-Defined in: [src/PoolNetwork.ts:20](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L20)
+Defined in: [src/PoolNetwork.ts:20](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L20)
 
 ### Methods
 
@@ -31,7 +31,7 @@ Defined in: [src/PoolNetwork.ts:20](https://github.com/centrifuge/sdk/blob/1e4b2
 
 > **canTrancheBeDeployed**(`trancheId`): [`Query`](#type-query)\<`boolean`\>
 
-Defined in: [src/PoolNetwork.ts:269](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L269)
+Defined in: [src/PoolNetwork.ts:269](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L269)
 
 Get whether a pool is active and the tranche token can be deployed.
 
@@ -53,7 +53,7 @@ The tranche ID
 
 > **deployTranche**(`trancheId`): [`Transaction`](#type-transaction)
 
-Defined in: [src/PoolNetwork.ts:306](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L306)
+Defined in: [src/PoolNetwork.ts:306](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L306)
 
 Deploy a tranche token for the pool.
 
@@ -75,7 +75,7 @@ The tranche ID
 
 > **deployVault**(`trancheId`, `currencyAddress`): [`Transaction`](#type-transaction)
 
-Defined in: [src/PoolNetwork.ts:330](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L330)
+Defined in: [src/PoolNetwork.ts:330](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L330)
 
 Deploy a vault for a specific tranche x currency combination.
 
@@ -103,7 +103,7 @@ The investment currency address
 
 > **isActive**(): [`Query`](#type-query)\<`boolean`\>
 
-Defined in: [src/PoolNetwork.ts:232](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L232)
+Defined in: [src/PoolNetwork.ts:232](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L232)
 
 Get whether the pool is active on this network. It's a prerequisite for deploying vaults,
 and doesn't indicate whether any vaults have been deployed.
@@ -118,7 +118,7 @@ and doesn't indicate whether any vaults have been deployed.
 
 > **shareCurrency**(`trancheId`): [`Query`](#type-query)\<[`CurrencyMetadata`](#type-currencymetadata)\>
 
-Defined in: [src/PoolNetwork.ts:143](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L143)
+Defined in: [src/PoolNetwork.ts:143](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L143)
 
 Get the details of the share token.
 
@@ -140,7 +140,7 @@ The tranche ID
 
 > **vault**(`trancheId`, `asset`): [`Query`](#type-query)\<[`Vault`](#class-vault)\>
 
-Defined in: [src/PoolNetwork.ts:215](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L215)
+Defined in: [src/PoolNetwork.ts:215](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L215)
 
 Get a specific Vault for a given tranche and investment currency.
 
@@ -168,7 +168,7 @@ The investment currency address
 
 > **vaults**(`trancheId`): [`Query`](#type-query)\<[`Vault`](#class-vault)[]\>
 
-Defined in: [src/PoolNetwork.ts:154](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L154)
+Defined in: [src/PoolNetwork.ts:154](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L154)
 
 Get the deployed Vaults for a given tranche. There may exist one Vault for each allowed investment currency.
 Vaults are used to submit/claim investments and redemptions.
@@ -191,7 +191,7 @@ The tranche ID
 
 > **vaultsByTranche**(): [`Query`](#type-query)\<`Record`\<`string`, [`Vault`](#class-vault)\>\>
 
-Defined in: [src/PoolNetwork.ts:198](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/PoolNetwork.ts#L198)
+Defined in: [src/PoolNetwork.ts:198](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/PoolNetwork.ts#L198)
 
 Get all Vaults for all tranches in the pool.
 

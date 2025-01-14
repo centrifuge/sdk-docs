@@ -1,7 +1,9 @@
 
-## Class: Currency
+## Class: ~~Perquintill~~
 
-Defined in: [src/utils/BigInt.ts:124](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L124)
+Defined in: [src/utils/BigInt.ts:246](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L246)
+
+### Deprecated
 
 ### Extends
 
@@ -9,11 +11,11 @@ Defined in: [src/utils/BigInt.ts:124](https://github.com/centrifuge/sdk/blob/212
 
 ### Constructors
 
-#### new Currency()
+#### new Perquintill()
 
-> **new Currency**(`value`, `decimals`): [`Currency`](#class-currency)
+> **new Perquintill**(`value`): [`Perquintill`](#class-perquintill)
 
-Defined in: [src/utils/BigInt.ts:29](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L29)
+Defined in: [src/utils/BigInt.ts:249](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L249)
 
 ##### Parameters
 
@@ -21,21 +23,17 @@ Defined in: [src/utils/BigInt.ts:29](https://github.com/centrifuge/sdk/blob/2127
 
 `bigint` | `Numeric`
 
-###### decimals
-
-`number` = `27`
-
 ##### Returns
 
-[`Currency`](#class-currency)
+[`Perquintill`](#class-perquintill)
 
-##### Inherited from
+##### Overrides
 
 `DecimalWrapper.constructor`
 
 ### Properties
 
-#### decimals
+#### ~~decimals~~
 
 > `readonly` **decimals**: `number` = `27`
 
@@ -47,7 +45,7 @@ Defined in: [src/utils/BigInt.ts:27](https://github.com/centrifuge/sdk/blob/2127
 
 ***
 
-#### value
+#### ~~value~~
 
 > `protected` **value**: `bigint`
 
@@ -59,51 +57,15 @@ Defined in: [src/utils/BigInt.ts:3](https://github.com/centrifuge/sdk/blob/21273
 
 ***
 
-#### ZERO
+#### ~~decimals~~
 
-> `static` **ZERO**: [`Currency`](#class-currency)
+> `static` **decimals**: `number` = `18`
 
-Defined in: [src/utils/BigInt.ts:129](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L129)
+Defined in: [src/utils/BigInt.ts:247](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L247)
 
 ### Methods
 
-#### add()
-
-> **add**(`value`): [`Currency`](#class-currency)
-
-Defined in: [src/utils/BigInt.ts:131](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L131)
-
-##### Parameters
-
-###### value
-
-`bigint` | [`Currency`](#class-currency)
-
-##### Returns
-
-[`Currency`](#class-currency)
-
-***
-
-#### div()
-
-> **div**(`value`): [`Currency`](#class-currency)
-
-Defined in: [src/utils/BigInt.ts:143](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L143)
-
-##### Parameters
-
-###### value
-
-`bigint` | [`Currency`](#class-currency)
-
-##### Returns
-
-[`Currency`](#class-currency)
-
-***
-
-#### eq()
+#### ~~eq()~~
 
 > **eq**\<`T`\>(`value`): `boolean`
 
@@ -129,7 +91,7 @@ Defined in: [src/utils/BigInt.ts:115](https://github.com/centrifuge/sdk/blob/212
 
 ***
 
-#### gt()
+#### ~~gt()~~
 
 > **gt**\<`T`\>(`value`): `boolean`
 
@@ -155,7 +117,7 @@ Defined in: [src/utils/BigInt.ts:105](https://github.com/centrifuge/sdk/blob/212
 
 ***
 
-#### gte()
+#### ~~gte()~~
 
 > **gte**\<`T`\>(`value`): `boolean`
 
@@ -181,7 +143,7 @@ Defined in: [src/utils/BigInt.ts:110](https://github.com/centrifuge/sdk/blob/212
 
 ***
 
-#### isZero()
+#### ~~isZero()~~
 
 > **isZero**(): `boolean`
 
@@ -197,7 +159,7 @@ Defined in: [src/utils/BigInt.ts:119](https://github.com/centrifuge/sdk/blob/212
 
 ***
 
-#### lt()
+#### ~~lt()~~
 
 > **lt**\<`T`\>(`value`): `boolean`
 
@@ -223,7 +185,7 @@ Defined in: [src/utils/BigInt.ts:95](https://github.com/centrifuge/sdk/blob/2127
 
 ***
 
-#### lte()
+#### ~~lte()~~
 
 > **lte**\<`T`\>(`value`): `boolean`
 
@@ -249,43 +211,7 @@ Defined in: [src/utils/BigInt.ts:100](https://github.com/centrifuge/sdk/blob/212
 
 ***
 
-#### mul()
-
-> **mul**(`value`): [`Currency`](#class-currency)
-
-Defined in: [src/utils/BigInt.ts:139](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L139)
-
-##### Parameters
-
-###### value
-
-`bigint` | [`Currency`](#class-currency) | [`Price`](#class-price)
-
-##### Returns
-
-[`Currency`](#class-currency)
-
-***
-
-#### sub()
-
-> **sub**(`value`): [`Currency`](#class-currency)
-
-Defined in: [src/utils/BigInt.ts:135](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L135)
-
-##### Parameters
-
-###### value
-
-`bigint` | [`Currency`](#class-currency)
-
-##### Returns
-
-[`Currency`](#class-currency)
-
-***
-
-#### toBigInt()
+#### ~~toBigInt()~~
 
 > **toBigInt**(): `bigint`
 
@@ -301,7 +227,7 @@ Defined in: [src/utils/BigInt.ts:21](https://github.com/centrifuge/sdk/blob/2127
 
 ***
 
-#### toDecimal()
+#### ~~toDecimal()~~
 
 > **toDecimal**(): `Decimal`
 
@@ -317,7 +243,7 @@ Defined in: [src/utils/BigInt.ts:43](https://github.com/centrifuge/sdk/blob/2127
 
 ***
 
-#### toFloat()
+#### ~~toFloat()~~
 
 > **toFloat**(): `number`
 
@@ -333,7 +259,19 @@ Defined in: [src/utils/BigInt.ts:47](https://github.com/centrifuge/sdk/blob/2127
 
 ***
 
-#### toString()
+#### ~~toPercent()~~
+
+> **toPercent**(): `Decimal`
+
+Defined in: [src/utils/BigInt.ts:261](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L261)
+
+##### Returns
+
+`Decimal`
+
+***
+
+#### ~~toString()~~
 
 > **toString**(): `string`
 
@@ -349,22 +287,36 @@ Defined in: [src/utils/BigInt.ts:17](https://github.com/centrifuge/sdk/blob/2127
 
 ***
 
-#### fromFloat()
+#### ~~fromFloat()~~
 
-> `static` **fromFloat**(`num`, `decimals`): [`Currency`](#class-currency)
+> `static` **fromFloat**(`number`): [`Perquintill`](#class-perquintill)
 
-Defined in: [src/utils/BigInt.ts:125](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L125)
+Defined in: [src/utils/BigInt.ts:253](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L253)
 
 ##### Parameters
 
-###### num
+###### number
 
 `Numeric`
 
-###### decimals
+##### Returns
 
-`number`
+[`Perquintill`](#class-perquintill)
+
+***
+
+#### ~~fromPercent()~~
+
+> `static` **fromPercent**(`number`): [`Perquintill`](#class-perquintill)
+
+Defined in: [src/utils/BigInt.ts:257](https://github.com/centrifuge/sdk/blob/212732e73f25bd4510d6678f3b949dc7a9984e80/src/utils/BigInt.ts#L257)
+
+##### Parameters
+
+###### number
+
+`Numeric`
 
 ##### Returns
 
-[`Currency`](#class-currency)
+[`Perquintill`](#class-perquintill)
