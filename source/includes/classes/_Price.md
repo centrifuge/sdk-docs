@@ -1,7 +1,7 @@
 
 ## Class: Price
 
-Defined in: [src/utils/BigInt.ts:215](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L215)
+Defined in: [src/utils/BigInt.ts:215](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L215)
 
 ### Extends
 
@@ -13,7 +13,7 @@ Defined in: [src/utils/BigInt.ts:215](https://github.com/centrifuge/sdk/blob/1e4
 
 > **new Price**(`value`): [`Price`](#class-price)
 
-Defined in: [src/utils/BigInt.ts:218](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L218)
+Defined in: [src/utils/BigInt.ts:218](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L218)
 
 ##### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/utils/BigInt.ts:218](https://github.com/centrifuge/sdk/blob/1e4
 
 > `readonly` **decimals**: `number` = `27`
 
-Defined in: [src/utils/BigInt.ts:27](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L27)
+Defined in: [src/utils/BigInt.ts:27](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L27)
 
 ##### Inherited from
 
@@ -47,7 +47,7 @@ Defined in: [src/utils/BigInt.ts:27](https://github.com/centrifuge/sdk/blob/1e4b
 
 > `protected` **value**: `bigint`
 
-Defined in: [src/utils/BigInt.ts:3](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L3)
+Defined in: [src/utils/BigInt.ts:3](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L3)
 
 ##### Inherited from
 
@@ -59,7 +59,7 @@ Defined in: [src/utils/BigInt.ts:3](https://github.com/centrifuge/sdk/blob/1e4b2
 
 > `static` **decimals**: `number` = `18`
 
-Defined in: [src/utils/BigInt.ts:216](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L216)
+Defined in: [src/utils/BigInt.ts:216](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L216)
 
 ### Methods
 
@@ -67,7 +67,7 @@ Defined in: [src/utils/BigInt.ts:216](https://github.com/centrifuge/sdk/blob/1e4
 
 > **add**(`value`): [`Price`](#class-price)
 
-Defined in: [src/utils/BigInt.ts:226](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L226)
+Defined in: [src/utils/BigInt.ts:226](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L226)
 
 ##### Parameters
 
@@ -85,7 +85,7 @@ Defined in: [src/utils/BigInt.ts:226](https://github.com/centrifuge/sdk/blob/1e4
 
 > **div**(`value`): [`Price`](#class-price)
 
-Defined in: [src/utils/BigInt.ts:238](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L238)
+Defined in: [src/utils/BigInt.ts:238](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L238)
 
 ##### Parameters
 
@@ -103,7 +103,7 @@ Defined in: [src/utils/BigInt.ts:238](https://github.com/centrifuge/sdk/blob/1e4
 
 > **eq**\<`T`\>(`value`): `boolean`
 
-Defined in: [src/utils/BigInt.ts:115](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L115)
+Defined in: [src/utils/BigInt.ts:115](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L115)
 
 ##### Type Parameters
 
@@ -129,7 +129,7 @@ Defined in: [src/utils/BigInt.ts:115](https://github.com/centrifuge/sdk/blob/1e4
 
 > **gt**\<`T`\>(`value`): `boolean`
 
-Defined in: [src/utils/BigInt.ts:105](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L105)
+Defined in: [src/utils/BigInt.ts:105](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L105)
 
 ##### Type Parameters
 
@@ -155,7 +155,7 @@ Defined in: [src/utils/BigInt.ts:105](https://github.com/centrifuge/sdk/blob/1e4
 
 > **gte**\<`T`\>(`value`): `boolean`
 
-Defined in: [src/utils/BigInt.ts:110](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L110)
+Defined in: [src/utils/BigInt.ts:110](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L110)
 
 ##### Type Parameters
 
@@ -181,7 +181,7 @@ Defined in: [src/utils/BigInt.ts:110](https://github.com/centrifuge/sdk/blob/1e4
 
 > **isZero**(): `boolean`
 
-Defined in: [src/utils/BigInt.ts:119](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L119)
+Defined in: [src/utils/BigInt.ts:119](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L119)
 
 ##### Returns
 
@@ -197,7 +197,7 @@ Defined in: [src/utils/BigInt.ts:119](https://github.com/centrifuge/sdk/blob/1e4
 
 > **lt**\<`T`\>(`value`): `boolean`
 
-Defined in: [src/utils/BigInt.ts:95](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L95)
+Defined in: [src/utils/BigInt.ts:95](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L95)
 
 ##### Type Parameters
 
@@ -223,7 +223,7 @@ Defined in: [src/utils/BigInt.ts:95](https://github.com/centrifuge/sdk/blob/1e4b
 
 > **lte**\<`T`\>(`value`): `boolean`
 
-Defined in: [src/utils/BigInt.ts:100](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L100)
+Defined in: [src/utils/BigInt.ts:100](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L100)
 
 ##### Type Parameters
 
@@ -249,7 +249,7 @@ Defined in: [src/utils/BigInt.ts:100](https://github.com/centrifuge/sdk/blob/1e4
 
 > **mul**(`value`): [`Price`](#class-price)
 
-Defined in: [src/utils/BigInt.ts:234](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L234)
+Defined in: [src/utils/BigInt.ts:234](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L234)
 
 ##### Parameters
 
@@ -267,7 +267,7 @@ Defined in: [src/utils/BigInt.ts:234](https://github.com/centrifuge/sdk/blob/1e4
 
 > **sub**(`value`): [`Price`](#class-price)
 
-Defined in: [src/utils/BigInt.ts:230](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L230)
+Defined in: [src/utils/BigInt.ts:230](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L230)
 
 ##### Parameters
 
@@ -285,7 +285,7 @@ Defined in: [src/utils/BigInt.ts:230](https://github.com/centrifuge/sdk/blob/1e4
 
 > **toBigInt**(): `bigint`
 
-Defined in: [src/utils/BigInt.ts:21](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L21)
+Defined in: [src/utils/BigInt.ts:21](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L21)
 
 ##### Returns
 
@@ -301,7 +301,7 @@ Defined in: [src/utils/BigInt.ts:21](https://github.com/centrifuge/sdk/blob/1e4b
 
 > **toDecimal**(): `Decimal`
 
-Defined in: [src/utils/BigInt.ts:43](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L43)
+Defined in: [src/utils/BigInt.ts:43](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L43)
 
 ##### Returns
 
@@ -317,7 +317,7 @@ Defined in: [src/utils/BigInt.ts:43](https://github.com/centrifuge/sdk/blob/1e4b
 
 > **toFloat**(): `number`
 
-Defined in: [src/utils/BigInt.ts:47](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L47)
+Defined in: [src/utils/BigInt.ts:47](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L47)
 
 ##### Returns
 
@@ -333,7 +333,7 @@ Defined in: [src/utils/BigInt.ts:47](https://github.com/centrifuge/sdk/blob/1e4b
 
 > **toString**(): `string`
 
-Defined in: [src/utils/BigInt.ts:17](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L17)
+Defined in: [src/utils/BigInt.ts:17](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L17)
 
 ##### Returns
 
@@ -349,7 +349,7 @@ Defined in: [src/utils/BigInt.ts:17](https://github.com/centrifuge/sdk/blob/1e4b
 
 > `static` **fromFloat**(`number`): [`Price`](#class-price)
 
-Defined in: [src/utils/BigInt.ts:222](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/utils/BigInt.ts#L222)
+Defined in: [src/utils/BigInt.ts:222](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/utils/BigInt.ts#L222)
 
 ##### Parameters
 

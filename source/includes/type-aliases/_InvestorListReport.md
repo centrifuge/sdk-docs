@@ -3,7 +3,7 @@
 
 > **InvestorListReport**: `object`
 
-Defined in: [src/types/reports.ts:279](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/types/reports.ts#L279)
+Defined in: [src/types/reports.ts:279](https://github.com/centrifuge/sdk/blob/ae12cdce6833f297c221dbc7667d8a8a900a03f0/src/types/reports.ts#L279)
 
 ### Type declaration
 
@@ -29,7 +29,7 @@ Defined in: [src/types/reports.ts:279](https://github.com/centrifuge/sdk/blob/1e
 
 #### poolPercentage
 
-> **poolPercentage**: `Rate`
+> **poolPercentage**: [`Rate`](#class-rate)
 
 #### position
 
