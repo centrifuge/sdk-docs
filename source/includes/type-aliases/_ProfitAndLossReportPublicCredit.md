@@ -1,9 +1,9 @@
 
 ## Type: ProfitAndLossReportPublicCredit
 
-> **ProfitAndLossReportPublicCredit**: `ProfitAndLossReportBase` & `object`
+> **ProfitAndLossReportPublicCredit**: [`ProfitAndLossReportBase`](#type-profitandlossreportbase) & `object`
 
-Defined in: [src/types/reports.ts:111](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/types/reports.ts#L111)
+Defined in: [src/types/reports.ts:111](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/types/reports.ts#L111)
 
 ### Type declaration
 

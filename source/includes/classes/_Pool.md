@@ -1,7 +1,7 @@
 
 ## Class: Pool
 
-Defined in: [src/Pool.ts:8](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L8)
+Defined in: [src/Pool.ts:8](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L8)
 
 ### Extends
 
@@ -13,7 +13,7 @@ Defined in: [src/Pool.ts:8](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce
 
 > **id**: `string`
 
-Defined in: [src/Pool.ts:12](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L12)
+Defined in: [src/Pool.ts:12](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L12)
 
 ***
 
@@ -21,7 +21,7 @@ Defined in: [src/Pool.ts:12](https://github.com/centrifuge/sdk/blob/1e4b2916d77c
 
 > `optional` **metadataHash**: `string`
 
-Defined in: [src/Pool.ts:13](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L13)
+Defined in: [src/Pool.ts:13](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L13)
 
 ### Accessors
 
@@ -31,7 +31,7 @@ Defined in: [src/Pool.ts:13](https://github.com/centrifuge/sdk/blob/1e4b2916d77c
 
 > **get** **reports**(): [`Reports`](#class-reports)
 
-Defined in: [src/Pool.ts:18](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L18)
+Defined in: [src/Pool.ts:18](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L18)
 
 ###### Returns
 
@@ -43,7 +43,7 @@ Defined in: [src/Pool.ts:18](https://github.com/centrifuge/sdk/blob/1e4b2916d77c
 
 > **activeNetworks**(): [`Query`](#type-query)\<[`PoolNetwork`](#class-poolnetwork)[]\>
 
-Defined in: [src/Pool.ts:79](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L79)
+Defined in: [src/Pool.ts:79](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L79)
 
 Get the networks where a pool is active. It doesn't mean that any vaults are deployed there necessarily.
 
@@ -57,7 +57,7 @@ Get the networks where a pool is active. It doesn't mean that any vaults are dep
 
 > **metadata**(): [`Query`](#type-query)\<`PoolMetadata`\> \| [`Query`](#type-query)\<`null`\>
 
-Defined in: [src/Pool.ts:22](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L22)
+Defined in: [src/Pool.ts:22](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L22)
 
 ##### Returns
 
@@ -69,7 +69,7 @@ Defined in: [src/Pool.ts:22](https://github.com/centrifuge/sdk/blob/1e4b2916d77c
 
 > **network**(`chainId`): [`Query`](#type-query)\<[`PoolNetwork`](#class-poolnetwork)\>
 
-Defined in: [src/Pool.ts:64](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L64)
+Defined in: [src/Pool.ts:64](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L64)
 
 Get a specific network where a pool can potentially be deployed.
 
@@ -89,7 +89,7 @@ Get a specific network where a pool can potentially be deployed.
 
 > **networks**(): [`Query`](#type-query)\<[`PoolNetwork`](#class-poolnetwork)[]\>
 
-Defined in: [src/Pool.ts:51](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L51)
+Defined in: [src/Pool.ts:51](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L51)
 
 Get all networks where a pool can potentially be deployed.
 
@@ -103,7 +103,7 @@ Get all networks where a pool can potentially be deployed.
 
 > **trancheIds**(): [`Query`](#type-query)\<`string`[]\>
 
-Defined in: [src/Pool.ts:28](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L28)
+Defined in: [src/Pool.ts:28](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L28)
 
 ##### Returns
 
@@ -115,7 +115,7 @@ Defined in: [src/Pool.ts:28](https://github.com/centrifuge/sdk/blob/1e4b2916d77c
 
 > **vault**(`chainId`, `trancheId`, `asset`): [`Query`](#type-query)\<[`Vault`](#class-vault)\>
 
-Defined in: [src/Pool.ts:100](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Pool.ts#L100)
+Defined in: [src/Pool.ts:100](https://github.com/centrifuge/sdk/blob/e8e313ed95c35b522a7e87515220a81ae2649430/src/Pool.ts#L100)
 
 ##### Parameters
 
