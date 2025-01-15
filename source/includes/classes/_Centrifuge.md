@@ -1,7 +1,7 @@
 
 ## Class: Centrifuge
 
-Defined in: [src/Centrifuge.ts:72](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L72)
+Defined in: [src/Centrifuge.ts:72](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L72)
 
 ### Constructors
 
@@ -9,7 +9,7 @@ Defined in: [src/Centrifuge.ts:72](https://github.com/centrifuge/sdk/blob/1e4b29
 
 > **new Centrifuge**(`config`): [`Centrifuge`](#class-centrifuge)
 
-Defined in: [src/Centrifuge.ts:97](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L97)
+Defined in: [src/Centrifuge.ts:97](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L97)
 
 ##### Parameters
 
@@ -29,7 +29,7 @@ Defined in: [src/Centrifuge.ts:97](https://github.com/centrifuge/sdk/blob/1e4b29
 
 > **get** **chains**(): `number`[]
 
-Defined in: [src/Centrifuge.ts:82](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L82)
+Defined in: [src/Centrifuge.ts:82](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L82)
 
 ###### Returns
 
@@ -43,7 +43,7 @@ Defined in: [src/Centrifuge.ts:82](https://github.com/centrifuge/sdk/blob/1e4b29
 
 > **get** **config**(): `DerivedConfig`
 
-Defined in: [src/Centrifuge.ts:74](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L74)
+Defined in: [src/Centrifuge.ts:74](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L74)
 
 ###### Returns
 
@@ -57,7 +57,7 @@ Defined in: [src/Centrifuge.ts:74](https://github.com/centrifuge/sdk/blob/1e4b29
 
 > **get** **signer**(): `null` \| [`Signer`](#type-signer)
 
-Defined in: [src/Centrifuge.ts:93](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L93)
+Defined in: [src/Centrifuge.ts:93](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L93)
 
 ###### Returns
 
@@ -69,7 +69,7 @@ Defined in: [src/Centrifuge.ts:93](https://github.com/centrifuge/sdk/blob/1e4b29
 
 > **account**(`address`, `chainId`?): [`Query`](#type-query)\<`Account`\>
 
-Defined in: [src/Centrifuge.ts:123](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L123)
+Defined in: [src/Centrifuge.ts:123](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L123)
 
 ##### Parameters
 
@@ -91,7 +91,7 @@ Defined in: [src/Centrifuge.ts:123](https://github.com/centrifuge/sdk/blob/1e4b2
 
 > **balance**(`currency`, `owner`, `chainId`?): [`Query`](#type-query)\<[`Currency`](#class-currency)\>
 
-Defined in: [src/Centrifuge.ts:168](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L168)
+Defined in: [src/Centrifuge.ts:168](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L168)
 
 Get the balance of an ERC20 token for a given owner.
 
@@ -125,7 +125,7 @@ The chain ID
 
 > **currency**(`address`, `chainId`?): [`Query`](#type-query)\<[`CurrencyMetadata`](#type-currencymetadata)\>
 
-Defined in: [src/Centrifuge.ts:132](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L132)
+Defined in: [src/Centrifuge.ts:132](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L132)
 
 Get the metadata for an ERC20 token
 
@@ -153,7 +153,7 @@ The chain ID
 
 > **getChainConfig**(`chainId`?): `Chain`
 
-Defined in: [src/Centrifuge.ts:85](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L85)
+Defined in: [src/Centrifuge.ts:85](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L85)
 
 ##### Parameters
 
@@ -171,7 +171,7 @@ Defined in: [src/Centrifuge.ts:85](https://github.com/centrifuge/sdk/blob/1e4b29
 
 > **getClient**(`chainId`?): `undefined` \| \{\}
 
-Defined in: [src/Centrifuge.ts:79](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L79)
+Defined in: [src/Centrifuge.ts:79](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L79)
 
 ##### Parameters
 
@@ -189,7 +189,7 @@ Defined in: [src/Centrifuge.ts:79](https://github.com/centrifuge/sdk/blob/1e4b29
 
 > **pool**(`id`, `metadataHash`?): [`Query`](#type-query)\<[`Pool`](#class-pool)\>
 
-Defined in: [src/Centrifuge.ts:119](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L119)
+Defined in: [src/Centrifuge.ts:119](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L119)
 
 ##### Parameters
 
@@ -211,7 +211,7 @@ Defined in: [src/Centrifuge.ts:119](https://github.com/centrifuge/sdk/blob/1e4b2
 
 > **setSigner**(`signer`): `void`
 
-Defined in: [src/Centrifuge.ts:90](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/Centrifuge.ts#L90)
+Defined in: [src/Centrifuge.ts:90](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/Centrifuge.ts#L90)
 
 ##### Parameters
 

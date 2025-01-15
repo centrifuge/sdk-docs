@@ -3,7 +3,7 @@
 
 > **OperationPendingStatus**: `object`
 
-Defined in: [src/types/transaction.ts:26](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/types/transaction.ts#L26)
+Defined in: [src/types/transaction.ts:26](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/types/transaction.ts#L26)
 
 ### Type declaration
 

@@ -1,9 +1,9 @@
 
 ## Type: CashflowReportPublicCredit
 
-> **CashflowReportPublicCredit**: `CashflowReportBase` & `object`
+> **CashflowReportPublicCredit**: [`CashflowReportBase`](#type-cashflowreportbase) & `object`
 
-Defined in: [src/types/reports.ts:78](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/types/reports.ts#L78)
+Defined in: [src/types/reports.ts:78](https://github.com/centrifuge/sdk/blob/89e29cfd91c249c6d0dc7754dc9ba4bee482214a/src/types/reports.ts#L78)
 
 ### Type declaration
 
