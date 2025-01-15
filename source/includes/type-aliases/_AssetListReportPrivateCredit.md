@@ -3,13 +3,13 @@
 
 > **AssetListReportPrivateCredit**: `object`
 
-Defined in: [src/types/reports.ts:248](https://github.com/centrifuge/sdk/blob/1e4b2916d77ce8c4f4eb61be819c3477c050b599/src/types/reports.ts#L248)
+Defined in: [src/types/reports.ts:248](https://github.com/centrifuge/sdk/blob/216f00e20dd3a7bd46cbc9a07a2fa1e84423cd4f/src/types/reports.ts#L248)
 
 ### Type declaration
 
 #### advanceRate
 
-> **advanceRate**: `Rate` \| `undefined`
+> **advanceRate**: [`Rate`](#class-rate) \| `undefined`
 
 #### collateralValue
 
@@ -17,11 +17,11 @@ Defined in: [src/types/reports.ts:248](https://github.com/centrifuge/sdk/blob/1e
 
 #### discountRate
 
-> **discountRate**: `Rate` \| `undefined`
+> **discountRate**: [`Rate`](#class-rate) \| `undefined`
 
 #### lossGivenDefault
 
-> **lossGivenDefault**: `Rate` \| `undefined`
+> **lossGivenDefault**: [`Rate`](#class-rate) \| `undefined`
 
 #### maturityDate
 
@@ -41,7 +41,7 @@ Defined in: [src/types/reports.ts:248](https://github.com/centrifuge/sdk/blob/1e
 
 #### probabilityOfDefault
 
-> **probabilityOfDefault**: `Rate` \| `undefined`
+> **probabilityOfDefault**: [`Rate`](#class-rate) \| `undefined`
 
 #### repaidInterest
 
