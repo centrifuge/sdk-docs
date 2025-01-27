@@ -176,9 +176,9 @@ const subscription = pool.closeEpoch().subscribe(
 );
 ```
 
-`signer` can be a [EIP1193](https://eips.ethereum.org/EIPS/eip-1193)-compatible provider or a Viem [LocalAccount](https://viem.sh/docs/accounts/local).
+`signer` can be a [EIP1193](https://eips.ethereum.org/EIPS/eip-1193)-compatible provider or a Viem [Wallet Client](https://viem.sh/docs/clients/wallet#wallet-client) or [Local Account](https://viem.sh/docs/accounts/local).
 
-With this you can call transaction methods. Similar to queries they can be awaited to get their final result, or subscribed to get get status updates.
+With this you can call transaction methods. Similar to queries they can be awaited to get their final result, or subscribed to get get status updates (see: [OperationStatus](#type-operationstatus)).
 
 <!--  ## Get All Pools
 
