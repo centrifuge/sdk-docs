@@ -149,6 +149,34 @@ Queries return Promise-like [Observables](https://rxjs.dev/guide/observable). Th
 
 The returned results are either immutable values, or entities that can be further queried.
 
+### Query caching
+
+```ts
+const report1 = await pool.reports.balanceSheet();
+const report2 = await pool.reports.balanceSheet(); // resolves immediately
+const report3 = await pool.reports.balanceSheet({ groupBy: "month" }); // also resolves immediately as it doesn't need to fetch new data
+
+sleep(5 * 60 * 1000);
+
+const report4 = await pool.reports.balanceSheet(); // will wait for fresh data
+```
+
+The results of queries are cached and shared between observables. When subscribing to a query multiple times, the underlying observables that fetch data are only subscribed to once. Data remains cached for a few minutes and will be passed to new subscribers. This is particularly useful in user-facing applications as queries can sometimes lead to a cascade of 4 or 5 requests and can slow down an application.
+
+```ts
+const centrifuge = new Centrifuge({ cache: false }); // TODO NOT YET IMPLEMENTED
+
+// ...
+
+const investment1 = await vault.investment("0x...");
+
+await vault.claim();
+
+const investment2 = await vault.investment("0x..."); // will fetch again
+```
+
+In a script you may want to disable caching to ensure that data is always fresh.
+
 ## Transactions
 
 ```js
