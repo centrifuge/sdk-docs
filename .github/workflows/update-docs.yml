@@ -1,0 +1,112 @@
+# This workflow will update the docs in the sdk-docs repo
+
+name: Update Docs
+
+on:
+# Anyone can trigger this workflow as the repository is public.   
+    repository_dispatch:
+      types: [trigger-from-apps-repo] 
+
+jobs:
+  # This is a sanity check to make sure the trigger is coming from the apps repo
+  # if not, we will fail the workflow and it will not run the rest of the jobs
+  validate-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate webhook secret
+        env:
+          EXPECTED_SECRET: ${{ secrets.APPS_WEBHOOK_SECRET }}
+          RECEIVED_SECRET: ${{ github.event.client_payload.secret }}
+        shell: bash
+        run: |
+          if [[ "${EXPECTED_SECRET}" != "${RECEIVED_SECRET}" ]]; then
+            echo "Invalid webhook secret"
+            exit 1
+          fi
+          echo "Webhook validation successful"
+
+  update-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout centrifuge/apps repository
+        uses: actions/checkout@v4
+        with:
+          repository: centrifuge/apps
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Yarn
+        shell: bash
+        run: |
+          corepack enable
+          corepack prepare yarn@4.5.0 --activate
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run gen:docs command
+        run: yarn gen:docs
+
+      - name: Upload docs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-docs
+          path: docs/
+          retention-days: 1
+
+  update-sdk-docs:
+    needs: update-docs 
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout sdk-docs repository
+        uses: actions/checkout@v4
+
+      - name: Download docs artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-docs
+          path: docs/
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install fs-extra
+
+      - name: Update docs
+        id: update_docs
+        shell: bash
+        run: |
+          # Update the docs using a fixed path
+          node "${GITHUB_WORKSPACE}/.github/ci-scripts/update-sdk-docs.cjs"
+          
+          # Use safe command substitution for git status
+          changes="$(git status --porcelain || true)"
+          if [[ -n "${changes}" ]]; then
+            echo "Changes detected"
+            echo "has_changes=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "No changes detected"
+            echo "has_changes=false" >> "${GITHUB_OUTPUT}"
+          fi
+
+      - name: Create Pull Request
+        if: steps.update_docs.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update SDK documentation"
+          title: "[sdk:ci:bot] Update SDK Documentation"
+          body: "[sdk:ci:bot] Automated PR to update SDK documentation"
+          branch: docs-update-${{ github.run_id }}
+          base: main
+          delete-branch: true
