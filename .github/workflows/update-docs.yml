@@ -34,7 +34,7 @@ jobs:
       - name: Checkout centrifuge/apps repository
         uses: actions/checkout@v4
         with:
-          repository: centrifuge/apps
+          repository: centrifuge/sdk
           ref: main
 
       - name: Setup Node.js
