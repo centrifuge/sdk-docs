@@ -11,9 +11,11 @@ includes:
   - reference
   - classes/Centrifuge
   - classes/Currency
+  - classes/Perquintill
   - classes/Pool
   - classes/PoolNetwork
   - classes/Price
+  - classes/Rate
   - classes/Reports
   - classes/Vault
   - type-aliases/AssetListReport
@@ -25,6 +27,7 @@ includes:
   - type-aliases/AssetTransactionReportFilter
   - type-aliases/BalanceSheetReport
   - type-aliases/CashflowReport
+  - type-aliases/CashflowReportBase
   - type-aliases/CashflowReportPrivateCredit
   - type-aliases/CashflowReportPublicCredit
   - type-aliases/Client
@@ -33,6 +36,7 @@ includes:
   - type-aliases/EIP1193ProviderLike
   - type-aliases/FeeTransactionReport
   - type-aliases/FeeTransactionReportFilter
+  - type-aliases/GroupBy
   - type-aliases/HexString
   - type-aliases/InvestorListReport
   - type-aliases/InvestorListReportFilter
@@ -47,9 +51,11 @@ includes:
   - type-aliases/OperationStatusType
   - type-aliases/OperationSwitchChainStatus
   - type-aliases/ProfitAndLossReport
+  - type-aliases/ProfitAndLossReportBase
   - type-aliases/ProfitAndLossReportPrivateCredit
   - type-aliases/ProfitAndLossReportPublicCredit
   - type-aliases/Query
+  - type-aliases/ReportFilter
   - type-aliases/Signer
   - type-aliases/TokenPriceReport
   - type-aliases/TokenPriceReportFilter
