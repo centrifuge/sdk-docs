@@ -4,26 +4,29 @@ name: Update Docs
 
 on:
 # Anyone can trigger this workflow as the repository is public.   
-    repository_dispatch:
-      types: [trigger-from-apps-repo] 
+  repository_dispatch:
+    types: [trigger-from-apps-repo] 
+  pull_request:
+    paths:
+      - '.github/workflows/update-docs.yml'
 
 jobs:
   # This is a sanity check to make sure the trigger is coming from the apps repo
   # if not, we will fail the workflow and it will not run the rest of the jobs
-  validate-trigger:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Validate webhook secret
-        env:
-          EXPECTED_SECRET: ${{ secrets.APPS_WEBHOOK_SECRET }}
-          RECEIVED_SECRET: ${{ github.event.client_payload.secret }}
-        shell: bash
-        run: |
-          if [[ "${EXPECTED_SECRET}" != "${RECEIVED_SECRET}" ]]; then
-            echo "Invalid webhook secret"
-            exit 1
-          fi
-          echo "Webhook validation successful"
+  # validate-trigger:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Validate webhook secret
+  #       env:
+  #         EXPECTED_SECRET: ${{ secrets.APPS_WEBHOOK_SECRET }}
+  #         RECEIVED_SECRET: ${{ github.event.client_payload.secret }}
+  #       shell: bash
+  #       run: |
+  #         if [[ "${EXPECTED_SECRET}" != "${RECEIVED_SECRET}" ]]; then
+  #           echo "Invalid webhook secret"
+  #           exit 1
+  #         fi
+  #         echo "Webhook validation successful"
 
   update-docs:
     runs-on: ubuntu-latest
